@@ -1,4 +1,4 @@
-Create a Repository and Initialize
+Step: Create a Repository and Initialize
 
 To make a new folder:
 $ mkdir hello-world
@@ -27,3 +27,17 @@ $ git diff
 
 Add your GitHub username to your configuration (remember!! correct caps):
 $ git config --global user.username <USerNamE> 
+
+Step: Connect your Local to your Remote
+
+Now you've got an empty repository started on GitHub.com. At the top you'll see 'Quick Setup', 
+make sure the 'HTTP' button is selected and copy the address — this is the location (address) 
+of your repository on GitHub's servers.
+
+You want to tell Git the location of the remote version on GitHub's servers. You can have multiple 
+remotes so each requires a name. For your main one, this is commonly named origin.
+$ git remote set-url origin <URLFROMGITHUB>
+
+Next you want to push (send) everything you've done locally to GitHub. Ideally you want to stay 
+in sync, meaning your local and remote versions match.
+$ git push origin master
